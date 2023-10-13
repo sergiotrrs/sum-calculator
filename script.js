@@ -21,12 +21,15 @@ const sumCalculator = () => {
 
 const getNumber1 = () => {
   const number1Input = document.getElementById("number1");
-  return number1Input.value;
+
+  //Necesitamos retornar el valor de los elemntos en tipo entero, por lo tanto pasamos el valor por una función parseInt
+  return parseInt(number1Input.value);
 };
 
 const getNumber2 = () => {
   const number2Input = document.getElementById("number2");
-  return number2Input.value;
+  //Necesitamos retornar el valor de los elementos en tipo entero, por lo tanto pasamos el valor por una función parseInt
+  return parseInt(number2Input.value);
 };
 
 const updateResult = (text) => {
